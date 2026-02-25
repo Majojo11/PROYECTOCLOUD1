@@ -234,3 +234,47 @@ section img {
     border-radius: 10px;  /* Bordes redondeados */
     box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Sombra opcional para que resalte */
 }
+
+.plataformas-container {
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.plataformas-container h2 {
+    color: #CF94B5;
+    font-size: 38px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.descripcion-plataformas {
+    color: #cccccc;
+    max-width: 700px;
+    margin: 0 auto 60px auto;
+    line-height: 1.6;
+}
+
+.plataformas-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.plataforma-card {
+    background-color: #2a2b45;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 40px 60px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s ease;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.plataforma-card:hover {
+    background-color: #CF94B5;
+    color: #000000;
+    transform: translateY(-8px);
+}
