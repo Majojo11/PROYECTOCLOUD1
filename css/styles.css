@@ -79,6 +79,7 @@ nav a:hover {
     height: auto;
     flex-shrink: 0;
     margin-top: 30px;
+    border-radius: 10px;
 }
 
 .hero-wrapper {
@@ -153,7 +154,7 @@ footer {
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);  /* sombra pro */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);  
     transition: 0.3s ease;
 }
 
@@ -185,4 +186,38 @@ footer {
     color: #EEC1A9;
     font-weight: bold;
     text-align: center;
+}
+
+/* Tracklist Hero */
+.tracklist-hero {
+    display: flex;
+    align-items: flex-start; /* Alinea al inicio verticalmente */
+    justify-content: flex-start; /* Que quede pegado a la izquierda */
+    gap: 100px; /* Espacio entre imagen y texto */
+    margin: 40px;
+    width: 100%; /* Ocupa todo el ancho disponible */
+    box-sizing: border-box; /* Que el padding no haga overflow */
+    align-items: center;
+}
+
+/* Imagen */
+.tracklist-hero img {
+    width: 600px;
+    height: auto;
+    flex-shrink: 0;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+/* Lista de canciones */
+.lista-canciones {
+    list-style: decimal inside;
+    padding: 20px 10px;
+    text-align: justify;
+}
+
+.lista-canciones li {
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 1.5;
 }
