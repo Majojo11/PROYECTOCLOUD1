@@ -34,12 +34,6 @@ header h1 {
     margin-bottom: 20px;
 }
 
-header img {
-    width: 200px;
-    height: auto;
-    flex-shrink: 0;
-}
-
 /* Navegación */
 nav {
     margin-top: 0;
@@ -220,4 +214,23 @@ footer {
     margin-bottom: 12px;
     font-size: 16px;
     line-height: 1.5;
+}
+
+/* Galería */
+section {
+    display: grid;
+    grid-template-columns: repeat(4, 300px); /* 4 columnas fijas de 200px */
+    grid-template-rows: repeat(2, 225px);    /* 2 filas fijas de 200px */
+    gap: 20px;                               /* Espacio entre imágenes */
+    justify-content: center;                  /* Centra el grid */
+    padding: 20px;
+}
+
+section img {
+    margin-top: 20px;
+    width: 100%;          /* Ocupa todo el ancho de la celda */
+    height: 100%;         /* Ocupa todo el alto de la celda */
+    object-fit: cover;    /* Mantiene proporción y recorta si es necesario */
+    border-radius: 10px;  /* Bordes redondeados */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Sombra opcional para que resalte */
 }
