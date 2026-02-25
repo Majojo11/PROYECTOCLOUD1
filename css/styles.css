@@ -1,36 +1,129 @@
+/* Reset básico */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #000000;
+    background-color: #1c1d2d;
     color: #ffffff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: #111111;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+header > div {
+    flex: 1;
     text-align: center;
 }
 
-header {
-    background-color: #111111;
-    padding: 20px;
+/* Título */
+header h1 {
+    margin: 0;
+    font-size: 32px;
+    letter-spacing: 2px;
 }
 
+header img {
+    width: 200px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+/* Navegación */
+nav {
+    margin-top: 0;
+}
+
+/* Botones */
 nav a {
-    color: #ffffff;
+    background-color: #1c1d2d;
+    color: #dbd9d9;
     text-decoration: none;
-    margin: 0 15px;
+    padding: 10px 50px;
+    border-radius: 8px;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.3s ease;
+    font-weight: bold;
+
 }
 
+/* Hover */
 nav a:hover {
-    color: #7a0000;
+    background-color: #ffffff;
+    color: #000000;
 }
 
+/* Sección principal */
 .hero {
-    padding: 100px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 30px 40px;
 }
 
-section {
-    padding: 40px;
+.hero img {
+    width: 600px;
+    height: auto;
+    flex-shrink: 0;
+    margin-top: 30px;
 }
 
+.hero-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.hero-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-texto h2 {
+    color: #CF94B5;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 4px;
+}
+
+.hero-texto p {
+    color: #cccccc;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Contenido */
+.contenido {
+    padding: 20px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.contenido p {
+    margin: 0;
+}
+
+/* Footer */
 footer {
     background-color: #111111;
-    padding: 15px;
-    margin-top: 40px;
+    padding: 20px;
+    margin-top: auto;
+    font-size: 14px;
+    color: #aaaaaa;
 }
